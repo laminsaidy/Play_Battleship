@@ -1,1 +1,30 @@
 # Your requirements go here
+
+hit = [21,22,]
+miss = [20,24,12,13]
+destroy = [23]
+counter = 0
+# create a nested for loop that prints "_" in a row and a nested if/else statement to check if ship is hit, miss or destroyed
+    for y in range(10):
+        symb = " _ "
+        if counter in hit:
+           symb = " o "
+        elif counter in miss:
+           symb = " x "
+        elif counter in destroy:
+           symb = " 0 "
+        row = row + symb
+        counter = counter + 1
+    print(x, "", row)
+
+    
+symb = " _ "
+        if counter in hit:
+           symb = " o "
+        elif counter in miss:
+           symb = " x "
+        elif counter in destroy:
+           symb = " 0 "
+        row = row + 
+        
+        counter = counter + 1
