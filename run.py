@@ -1,6 +1,37 @@
 # import random package to create random board 
 from random import randint
 
+print("Welcome to Battleship!")
+player1_name = input("Please enter your name: ")
+print(f"Hello {player1_name}! Let's get it on.")
+
+def board (hit, miss, destroy):
+   # prints gameboard 
+   print("            Ships ")
+   print("     0  1  2  3  4  5  6  7  8  9")
+
+   counter = 0
+# Create a nested for loop that prints "." in a row and a nested if/else statement to check if ship is hit, miss or destroyed
+   for x in range(10):   
+       row = ""
+       for y in range(9):
+         symb = " . "
+       if counter in miss:
+         symb = " x "
+       elif counter in hit:
+         symb = " o "
+       elif counter in destroy:
+         symb = " 0 "
+
+       row = row + symb
+       counter = counter + 1
+       print(x," ",row*10)
+
+hit = []
+miss = []
+destroy = [] 
+    
+
 # Create a function to get shot input from user
 def take_a_shot(total_guesses):
    
@@ -23,29 +54,7 @@ def take_a_shot(total_guesses):
                print("That's invalid! Please try again")
          return shot
 
-def board (hit, miss, destroy):
-   print("            Ships ")
-   print("     0  1  2  3  4  5  6  7  8  9")
 
-   counter = 0
-# Create a nested for loop that prints "." in a row and a nested if/else statement to check if ship is hit, miss or destroyed
-   for x in range(10):   
-       row = ""
-       for y in range(9):
-         symb = " . "
-       if counter in miss:
-         symb = " x "
-       elif counter in hit:
-         symb = " o "
-       elif counter in destroy:
-         symb = " 0 "
-
-       row = row + symb
-       counter = counter + 1
-       print(x," ",row*10)
-
-
-    
 
 #Create a function to validate a shot of hit, miss or destroy Ship
 def validate_shot(shot,ship1,ship2,hit,miss,destroy):
@@ -70,9 +79,7 @@ def validate_shot(shot,ship1,ship2,hit,miss,destroy):
 
 ship1 = [6,16,26]
 ship2 = [45,46,47]
-hit = []
-miss = []
-destroy = []  
+
 
 
 # Condition for how many shots are allowed
