@@ -1,3 +1,4 @@
+
 # import random package to create random board 
 from random import randint
 
@@ -56,17 +57,22 @@ def take_a_shot(total_guesses):
 
 
 
-#Create a function to validate a shot of hit, miss or destroy Ship
 def validate_shot(shot):
-
+   global ships
+   is_hit = False
 # An if statement to validate if it's a hit, miss or on a ship
    for ship in ships:
       if shot in ship:
          ship.remove(shot)
          hit.append(shot)
-      else:
-         miss.append(shot)
-      
+         is_hit = True
+         if not ship:  # If ship is completely destroyed
+            destroy.append(ship)
+            ships.remove(ship)
+         break
+   if not is_hit:
+      miss.append(shot)
+
 
 
 
@@ -86,10 +92,3 @@ for i in range (10):
       print("You are the winner")
       break
 print("End of Game")
-
-
-
-
-
-
-
