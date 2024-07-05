@@ -1,32 +1,56 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# WELCOME TO MY ULTIMATE BATTLESHIPS
+#### How to play
+This is a Python Battleship game for two players (you against the computer). 
 
-Welcome,
+It starts with a player entering their name and then the guessing game begins by locating ships on a grid tracking hits, misses and destroy.
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **May 14, 2024**
+The player and computer take guesses trying to sink each others Battleships.
 
-## Reminders
+If both players misses, it indicates " O ".
 
-- Your code must be placed in the `run.py` file
-- Your dependencies must be placed in the `requirements.txt` file
-- Do not edit any of the other files or your code may not deploy properly
+If player hits a ship, it indicates " P ".
 
-## Creating the Heroku app
+If computer hits a ship, it indicates " C ".
 
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
+Each has ten shots and the first to sink all the opponents ships wins the the game. 
+# Existing features
+Player enters their name. <br>
+You play against computer. <br>
+Accepts user input. <br>
+Ships are randomly placed on board. <br>
+Grid: Play on a 10x10 board. <br>
+Coordinates outside Grid size are not allowed. <br>
+Only numbers are allowed. <br>
+Previous guesses can't be use twice.
 
-1. `heroku/python`
-2. `heroku/nodejs`
+### Future features
+Multiple players. <br>
+More ships and increase board size. <br>
+Real life images to indicate hit, miss or destroyed. <br>
 
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
+# Testing
+I have manually tested the code through my local terminal and the codeinstitute Heroku terminal. <br>
+Tested the code through CI Python Linter validator and no errors where found.
 
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
 
-Connect your GitHub repository and deploy as normal.
+# Bugs
+There was no symbols on the board game when a player take a shot as intended therefore, I had to rewrite the board function properly to get it fixed.
+### Remaining Bugs
+There are no Bugs remaining.
+### Validator testing
+No errors where found on the CI Python Linter validator.
 
-## Constraints
+# Deployment
+This project was deployed using Codeinstute's mock terminal for Heroku.
+## Steps for deployment
+Fork or clone this repository. <br>
+Create a new Heroku app. <br>
+Set the buildbacks to python and NodJS in that order. <br>
+Link the Heroku app to the repository. <br>
+click on Deploy.
 
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
+### Credits
+Code Institute for the deployment terminal. <br>
+Wikidipedia for the details on the Battleship game. <br>
+Youtube videos on how to go by the Project. 
 
----
-
-Happy coding!
