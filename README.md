@@ -1,8 +1,10 @@
 # WELCOME TO MY ULTIMATE BATTLESHIPS
+Battleship is a strategy type guessing game for two players. It is played on ruled grids on which each player's fleet of ships are marked. The locations of the fleets are concealed from the other player. Players take alternate turns to shoot at the other player's ships, and the objective of the game is to destroy the opposing player's fleet. My  site’s goal is to provide an easy but challenging game to entertain the Users.
 #### How to play
 This is a Python Battleship game for two players (you against the computer). 
 
-It starts with a player entering their name and then the guessing game begins by locating ships on a grid tracking hits, misses and destroy.
+The game begins with a welcome message and the player is asked to enter their name
+![screenshot welcome message](images/Screenshot%20(150).png)
 
 The player and computer take guesses trying to sink each others Battleships.
 
