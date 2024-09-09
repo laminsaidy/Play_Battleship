@@ -4,10 +4,11 @@ Battleship is a strategy type guessing game for two or more players. It allows t
 # Rules of the game
 
 - Users can play against the computer on a 10x10 grid board.
-- Ships are randomly placed on board and only numbers are allowed.
+- Ships are randomly placed on one large board and only numbers are allowed.
 - Coordinates outside Grid size are not allowed and previous guesses can't be use twice.
-- The player and computer take guesses trying to sink each others Battleships.
+- The player and computer take guesses trying to sink each others Battleships on one large board.
 - Each has ten shots and the first to sink all the opponents ships wins the the game.
+- The winner is announce at the end of the game.
 <br>
 
 ## Site Owner Goals 
@@ -22,37 +23,36 @@ Battleship is a strategy type guessing game for two or more players. It allows t
 - A welcome message with an input field for users to enter their name.
 <br>
 
-![screenshot welcome message](images/Screenshot%20(150).png)
+![screenshot welcome message](images/Screenshot%20(161).png)
 
 - 10x10 Grid board.
 <br>
 
-![screenshot grid board](images/Screenshot%20(151).png)
+![screenshot grid board](images/Screenshot%20(162).png)
 
 - If both players misses, it indicates " O ".
 <br>
 
-![screenshot "O"](images/Screenshot%20(158).png)
+![screenshot "O"](images/Screenshot%20(163).png)
 
 - If player hits a ship, it indicates " P ".
 <br>
 
-![screenshot "P"](images/Screenshot%20(157).png)
+![screenshot "P"](images/Screenshot%20(167).png)
 
 - If computer hits a ship, it indicates " C ".
+
+![screenshot "C"](images/Screenshot%20(168).png)
+
+- Only coordinate numbers within the grid are allowed.
 <br>
 
-![screenshot "C"](images/Screenshot%20(153).png)
-
-- Only coordinate numbers are allowed.
-<br>
-
-![screenshot "only coordinate numbers"](images/Screenshot%20(155).png)
+![screenshot "only coordinate numbers"](images/Screenshot%20(165).png)
 
 - A number can only be use once.
 <br>
 
-![screenshot "Invalid numbers"](images/Screenshot%20(154).png)
+![screenshot "Invalid numbers"](images/Screenshot%20(164).png)
 
 - The game ends when a player hits more ships from the opponent.
 <br>
@@ -95,7 +95,7 @@ There are no Bugs remaining.
 
 - Player cannot guess a coordinate twice or outside the board
 
-![Invalid input, Repeated Coordinate](images/Screenshot%20(154).png)
+![Invalid input, Repeated Coordinate](images/Screenshot%20(165).png)
 
 # Deployment
 This project was deployed using the Code Institute's mock terminal for Heroku.
