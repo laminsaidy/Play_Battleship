@@ -1,7 +1,7 @@
 # WELCOME TO MY ULTIMATE BATTLESHIPS
 Battleship is a strategy type guessing game for two or more players. It allows the user to play on ruled grids on which each user's fleet of ships are marked. The locations of the fleets are concealed from the other user. It allows users to take alternate turns to shoot at each others ships, and the objective of the game is to destroy the opposing user's fleet. My  site’s goal is to provide an easy but challenging game to entertain the Users.
 
-![screenshot "Game board"](images/Screenshot%20(169).png)
+![screenshot "Game board"](images/Screenshot%20(170).png)
 
 
 # Rules of the game
