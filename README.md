@@ -12,6 +12,7 @@ Battleship is a strategy type guessing game for two or more players. It allows t
 - The player and computer take guesses trying to sink each others Battleships on one large board.
 - Each has ten shots and the first to sink all the opponents ships wins the the game.
 - The winner is announce at the end of the game.
+- Click on the RUN PROGRAM button to restart the game
 <br>
 
 ## Site Owner Goals 
