@@ -12,34 +12,42 @@ Battleship is a strategy type guessing game for two or more players. It allows t
 
 # Existing features
 <li>A welcome message with an input field for users to enter their name</li>
+<br>
 
 ![screenshot welcome message](images/Screenshot%20(150).png)
 
 <li>10x10 Grid board</li>
+<br>
 
 ![screenshot grid board](images/Screenshot%20(151).png)
 
 <li>If both players misses, it indicates " O ".</li>
+<br>
 
 ![screenshot "O"](images/Screenshot%20(158).png)
 
 <li>If player hits a ship, it indicates " P ".</li>
+<br>
 
 ![screenshot "P"](images/Screenshot%20(157).png)
 
 <li>If computer hits a ship, it indicates " C ".</li>
+<br>
 
 ![screenshot "C"](images/Screenshot%20(153).png)
 
 <li>Only coordinate numbers are allowed</li>
+<br>
 
 ![screenshot "only coordinate numbers"](images/Screenshot%20(155).png)
 
 <li>A number can only be use once</li>
+<br>
 
 ![screenshot "Invalid numbers"](images/Screenshot%20(154).png)
 
 <li>The game ends when a player hits more ships from the opponent</li>
+<br>
 
 ![screenshot "End of game"](images/Screenshot%20(156).png)
 
@@ -57,8 +65,10 @@ Battleship is a strategy type guessing game for two or more players. It allows t
 <br>
 
 # Testing
-I have manually tested the code through my local terminal and the codeinstitute Heroku terminal. <br>
-Tested the code through CI Python Linter validator and no errors where found.
+
+<li>I tested that only numbers are accepted by the application</li>
+<li>I tested that the same numbers can only be used once</li> 
+<li>Tested the code through CI Python Linter validator and no errors where found.</li>
 
 
 # Bugs
