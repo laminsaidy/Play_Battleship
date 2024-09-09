@@ -9,9 +9,15 @@ computer_misses = []
 player_ship = [6, 16, 26]
 computer_ship = [45, 46, 47]
 
-print("Welcome to Battleship!")
+print('Welcome to Battleship!')
+print('Your objective is to sink all ships!')
+print('1. The game consists of one large boards (10x10).')
+print('2. You have 10 turns to sink all the ships.')
+print('3. Guess a row and column (0-100).')
+print('4. "C" for computer(hit), "O" for miss, "P" for player hit.')
 player1_name = input("Please enter your name: ")
 print(f"Hello {player1_name}! Let's get it on.")
+print('\nGood luck!\n')
 
 
 def board():
